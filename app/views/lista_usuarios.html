@@ -4,17 +4,17 @@
 <div class="panel-heading">
 	<h3 class="panel-title">Lista de Usuários</h3>
 </div>
-	<table class="table table-hover">	    
+	<table class="table table-hover">	    	    
 		<tr class="info">
 			<td>ID</td>
 			<td>Nome</td>		
-		</tr>
-		% for usuario in usuarios:
-		    <tr class="active">
-		    	<td>{{usuario.id}}</td>
-		    	<td>{{usuario.username }}</td>
-		    </tr>
-		% end
+		</tr>		
+			% for usuario in usuarios:
+			    <tr class="active">
+			    	<td>{{usuario.id}}</td>
+			    	<td>{{usuario.username }}</td>
+			    </tr>
+			% end		
 		<tr>
 			<td><a href="/" class="btn btn-primary">voltar login</a></td>
 			<td><a href="cadastro" class="btn btn-primary">voltar cadastro</a></td>
